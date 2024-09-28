@@ -1,0 +1,166 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeef1; 
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50; 
+  margin-top: 20px;
+  font-size: 2.5rem; 
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+input {
+  width: 100%;
+  max-width: 320px;
+  padding: 12px;
+  border: 1px solid #bdc3c7; 
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2980b9; 
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #007bff; 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056a1; 
+  transform: translateY(-2px);
+}
+
+/* Notification Styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #33b249; /* Green background for success */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1000; 
+}
+
+/* Product Display Styles */
+#products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#products > div {
+  background-color: #ffffff;
+  border: 1px solid #ddd; 
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#products > div:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #2c3e50; 
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #7f8c8d; 
+}
+
+/* Buttons for each product */
+#products button {
+  margin: 5px;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#products button.delete-button {
+  background-color: #ED0800; 
+}
+
+#products button.delete-button:hover {
+  background-color: #B00500; 
+}
+
+#products button.update-button {
+  background-color: #ffbd03; 
+}
+
+#products button.update-button:hover {
+  background-color: #e67e22; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form {
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  #products {
+      padding: 0 10px;
+  }
+  
+  #products > div {
+      max-width: 100%;
+  }
+}
+
+/* Adjusted for smaller screens */
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2rem; 
+  }
+  
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  button {
+      padding: 10px 20px;
+  }
+}
